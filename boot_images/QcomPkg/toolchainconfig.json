@@ -10,8 +10,8 @@
                                                                      ] 
                                                         } ,
                                              "Linux" : {
-                                                          "Path" :  "/pkg/qct/software/llvm/release/arm/3.9.1/bin/" ,  # put in the search path use os.pathsep in python to concat
-                                                          "Tool_path" : "/pkg/qct/software/llvm/release/arm/3.9.1/tools/bin/" ,
+                                                          "Path" :  "/home/map220v/Sources/BOOT.XF.2.1/QCOM_LLVM_10.0/bin/" ,  # put in the search path use os.pathsep in python to concat
+                                                          "Tool_path" : "/home/map220v/Sources/BOOT.XF.2.1/QCOM_LLVM_10.0/tools/bin/" ,
                                                           "Params" : [# append to the build command
                                                                        "-t" , "CLANG39LINUX"
                                                                      ]
@@ -49,7 +49,7 @@
                                         "Path" : "C:\\Apps\\LLVM\\3.9.1\\tools\\bin\\arm-elfcopy.exe"
                                       },
                            "Linux" : {
-                                        "Path" : "/pkg/qct/software/llvm/release/arm/3.9.1/tools/bin/arm-elfcopy"
+                                        "Path" : "/home/map220v/Sources/BOOT.XF.2.1/QCOM_LLVM_10.0/tools/bin/arm-elfcopy"
                                      }
                                },
                 "SBL_image_parser" : {

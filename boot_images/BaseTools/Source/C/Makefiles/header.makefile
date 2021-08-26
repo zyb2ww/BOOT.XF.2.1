@@ -44,12 +44,12 @@ ARCH_INCLUDE = -I $(MAKEROOT)/Include/AArch64/
 endif
 
 INCLUDE = $(TOOL_INCLUDE) -I $(MAKEROOT) -I $(MAKEROOT)/Include/Common -I $(MAKEROOT)/Include/ -I $(MAKEROOT)/Include/IndustryStandard -I $(MAKEROOT)/Common/ -I .. -I . $(ARCH_INCLUDE) 
-CPPFLAGS = $(INCLUDE)
+CPPFLAGS = $(INCLUDE) -fpermissive
 ifeq ($(DARWIN),Darwin)
 # assume clang or clang compatible flags on OS X
 CFLAGS = -MD -fshort-wchar -fno-strict-aliasing -Wall -Werror -Wno-deprecated-declarations -Wno-self-assign -nostdlib -c -g
 else
-CFLAGS = -MD -fshort-wchar -fno-strict-aliasing -Wall -Werror -Wno-deprecated-declarations -nostdlib -c -g
+CFLAGS = -MD -fshort-wchar -fno-strict-aliasing -Wall -Werror -Wno-error -Wno-deprecated-declarations -nostdlib -c -g
 endif
 LFLAGS =
 
