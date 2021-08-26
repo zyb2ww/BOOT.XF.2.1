@@ -1,6 +1,7 @@
 # BOOT.XF.2.1
 
 # Setup
+0. ```git clone https://github.com/map220v/BOOT.XF.2.1.git --recursive```
 1. Install required tools: ```sudo apt install build-essential uuid-dev gcc g++ python2.7 sqlite3 iasl git nasm```
 2. Set in "boot_images/QcomPkg/toolchainconfig.json" absolute path to :
  * "QCOM_LLVM_10.0/bin/"
