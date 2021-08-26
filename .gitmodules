@@ -1,0 +1,3 @@
+[submodule "QCOM_LLVM_10.0"]
+	path = QCOM_LLVM_10.0
+	url = https://github.com/map220v/QCOM_LLVM_10.0.git
